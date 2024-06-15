@@ -28,7 +28,7 @@
 </head>
 <body>
     <h1>Halo om✨</h1>
-    <p>Base script Tixo-MD!</p>
+    <p>Base by Tixo-MD!</p>
     <p>Created with ❤️ by Tioo.</p>
 </body>
 </html>
