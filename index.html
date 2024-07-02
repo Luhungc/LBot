@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Penting</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://telegra.ph/file/75e360c8033db8eb79019.png') no-repeat center center fixed;
+            background-size: cover;
+            animation: backgroundFade 5s ease-in-out infinite alternate;
+        }
+        @keyframes backgroundFade {
+            from {
+                filter: brightness(1);
+            }
+            to {
+                filter: brightness(0.8);
+            }
+        }
+        .box {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            color: white;
+            transform: translateY(30%);
+            opacity: 0%;
+            animation: slideUp 0.8s ease-out forwards, fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .box h1 {
+            margin-top: 0;
+        }
+        .box ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .box input[type="checkbox"] {
+            margin-top: 20px;
+            transform: scale(0.8);
+        }
+        .box label {
+            font-size: 0.9em;
+        }
+        .box button, .box button2 {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .box button {
+            background-color: #007BFF;
+        }
+        .box button2 {
+            background-color: #00BA25;
+        }
+        .box button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .center-line {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="center-line"><h1>Baca sebelum menggunakan</h1>
+        <ul>
+            <li>Dilarang menggunakan bot untuk merugikan orang lain.</li>
+            <li>Dilarang menelepon/call bot.</li>
+            <li>Tidak diperbolehkan menggunakan bot untuk aktivitas ilegal atau tidak etis.</li>
+            <li>Tidak boleh menggunakan bot untuk spamming atau mengirimkan pesan berulang-ulang yang mengganggu.</li>
+            <li>Jangan mencoba meretas atau memanipulasi bot untuk tujuan apapun.</li>
+            <li>Gunakan bahasa yang sopan dan tidak mengandung kata-kata kasar.</li>
+            <li>Penggunaan bot harus dengan itikad baik dan tidak merusak pengalaman pengguna lain.</li>
+            <li>Bot ini akan direstart otomatis setelah 1 jam aktif.</li>
+            <li>Jika bot tidak merespon, dilarang spam bot, Karena bot sedang delay atau mungkin mati.</li>
+            <li>Jagalah kenyamanan pengguna lain. </li>
+        </ul>
+        <div class="center-line">━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        <div>Note: Jika anda menemukan sebuah bug, silahkan lapor kepada owner. Ketik .owner untuk melihat owner.</div>
+        <div class="center-line"><label for="agreeCheckbox">Dengan membaca semua ketentuan yang berlaku. Kami harap ada kenyamanan bersama.</label><br>
+        <input type="checkbox" id="agreeCheckbox"> <label for="agreeCheckbox">Saya telah membaca semua ketentuan penggunaan yang berlaku</label><br>
+        <button id="proceedButton" disabled onclick="window.open('https://wa.me/48699532478?text=.menu', '_blank')">Pergi ke link</button>
+        </div>
+
+    <script>
+        document.getElementById('agreeCheckbox').addEventListener('change', function() {
+            document.getElementById('proceedButton').disabled = !this.checked;
+        });
+    </script>
+</body>
+  </html>
